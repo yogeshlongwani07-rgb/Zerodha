@@ -1,11 +1,12 @@
 import React from "react";
+import {Link} from "react-router-dom";
 function Navbar() {
   return (
       <nav class="navbar navbar-expand-lg border-bottom" style={{backgroundColor:"#fff"}}>
         <div class="container p-2">
-          <a class="navbar-brand" href="#">
+          <Link class="navbar-brand" to="/">
             <img src="media/images/logo.svg" alt="logo" style={{width:"25%"}}/>
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -20,29 +21,29 @@ function Navbar() {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-muted" aria-current="page" href="#">
+                <Link class="nav-link active text-muted" aria-current="page" to="/signup">
                   SignUp
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-muted" href="#">
+                <Link class="nav-link active text-muted" to="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-muted" href="#">
+                <Link class="nav-link active text-muted" to="/product">
                   Product
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-muted" href="#">
+                <Link class="nav-link active text-muted" to="/pricing">
                   Pricing
-                </a>
+                </Link>
               </li>
                 <li class="nav-item">
-                <a class="nav-link active text-muted" href="#">
+                <Link class="nav-link active text-muted" to="/support">
                   Support
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
