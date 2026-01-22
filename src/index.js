@@ -15,7 +15,7 @@ import NotFound from './landing_page/NotFound';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-  <Navbar/>
+  <Navbar className="navbar"/>
     <Routes>
       <Route path='/' element={<HomePage/>}/>
       <Route path='/signup' element={<Signup/>}/>
